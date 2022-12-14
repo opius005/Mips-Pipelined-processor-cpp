@@ -1,0 +1,19 @@
+addi $2,$0,5
+addi $5,$0,1
+addi $3,$0,1
+addi $4,$3,1
+loop:
+beq $2,$5,end
+addi $5,$5,1
+mul $6,$3,$4
+addi $4,$4,1
+add $3,$6,$0
+j loop
+end
+
+
+Note:
+input is given in $2
+result will be in $6
+
+

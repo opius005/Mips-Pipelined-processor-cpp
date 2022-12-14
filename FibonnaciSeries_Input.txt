@@ -1,0 +1,17 @@
+addi $2,$0,10
+addi $5,$0,2
+addi $3,$0,0
+addi $4,$0,1
+loop:
+beq $2,$5,end
+addi $5,$5,1
+add $6,$3,$4
+add $3,$4,$0
+add $4,$6,$0
+j loop
+end:
+
+
+Note:
+Input is given to $2
+result will be in $6
